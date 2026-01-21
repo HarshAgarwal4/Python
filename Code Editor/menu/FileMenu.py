@@ -7,6 +7,7 @@ class File_Menu:
         parent.filemenu = tk.Menu(parent.main_menu , tearoff=0)
         parent.filemenu.add_command(label="New" , command=a.newFile)
         parent.filemenu.add_command(label="Open", command=a.openFile)
+        parent.filemenu.add_command(label="Open Folder", command=a.openFolder)
         parent.filemenu.add_command(label="Save" , command=a.saveFile)
         parent.filemenu.add_command(label="Save As" , command=a.saveAsFile)
         parent.filemenu.add_command(label="Exit" , command=a.exit)

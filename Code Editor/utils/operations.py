@@ -1,7 +1,7 @@
 class operationsClass:
     def __init__(self , parent):
         self.parent = parent
-        
+    
     def cut(self):
         self.parent.T_AREA.event_generate("<<Cut>>")
 
