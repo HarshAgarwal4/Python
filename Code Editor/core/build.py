@@ -17,7 +17,7 @@ class AppLayout:
     def variables(self , parent):
         parent.folder = None
         parent.side_tree = None
-        parent.opened_tabs = []
+        parent.opened_tabs = {}
         parent.all_tabs = {}
 
     def mainmenu(self, parent):
@@ -31,5 +31,5 @@ class AppLayout:
         Pane(parent)
         Sidebar(parent)
         Left_Frame(parent)
-        Tabs(parent)
         Text_Area(parent)
+        Tabs(parent)

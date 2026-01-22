@@ -1,10 +1,13 @@
 import tkinter.messagebox as msg
 import tkinter.filedialog as fd
+import tkinter as tk
+from utils.Tabs import Tab_Functions as tf
 import os
 
 class FileFunctions:
     def __init__(self , parent):
         self.parent = parent
+        self.a = tf(parent)
 
     def makeTree(self, p, parent_node=""):
         
@@ -29,13 +32,12 @@ class FileFunctions:
             node = self.parent.side_tree.insert(
                 parent_node,
                 "end",
-                text=item
+                text=item,
             )
-            self.parent.all_tabs[item] = {
+            self.parent.all_tabs[str(node)] = {
                 "path" : full_path,
                 "type" : "file" if os.path.isfile(full_path) else ("folder" if os.path.isdir(full_path) else None),
             }
-
             if os.path.isdir(full_path):
                 self.makeTree(full_path, node)      
 
@@ -46,10 +48,18 @@ class FileFunctions:
             self.makeTree(self.parent.folder)
         
     def newFile(self):
-        pass
+        self.a.open_tab("Untitled" , None)
 
     def openFile(self):
-        pass
+        file = fd.askopenfilename(
+            title="Open File",
+            filetypes=(
+                ("All Files", "*.*"),
+                ("Python files" ,  '.py')
+            )
+        )
+        if file:
+            self.a.open_tab(os.path.basename(file) , file)  
 
     def saveFile(self):
         pass

@@ -3,5 +3,5 @@ from tkinter import ttk
 
 class Text_Area:
     def __init__(self, parent):
-        parent.T_AREA = tk.Text(parent.left_frame , undo=True)
-        parent.T_AREA.pack(fill=tk.BOTH, expand=True)
+        parent.T_frame = ttk.Frame(parent.left_frame)
+        parent.T_frame.pack(fill="both", side="bottom" , expand=True)
