@@ -7,6 +7,7 @@ from components.SidebarPane import Pane
 from components.Sidebar import Sidebar
 from components.leftFrame import Left_Frame
 from components.Tabs import Tabs
+from components.Home import Home
 
 class AppLayout:
     def __init__(self , parent):
@@ -19,6 +20,7 @@ class AppLayout:
         parent.side_tree = None
         parent.opened_tabs = {}
         parent.all_tabs = {}
+        parent.mode = 'single'
 
     def mainmenu(self, parent):
         parent.main_menu = tk.Menu(parent)
@@ -32,4 +34,5 @@ class AppLayout:
         Sidebar(parent)
         Left_Frame(parent)
         Text_Area(parent)
+        Home(parent)
         Tabs(parent)

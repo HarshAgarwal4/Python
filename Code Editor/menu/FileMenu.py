@@ -10,5 +10,6 @@ class File_Menu:
         parent.filemenu.add_command(label="Open Folder", command=a.openFolder)
         parent.filemenu.add_command(label="Save" , command=a.saveFile)
         parent.filemenu.add_command(label="Save As" , command=a.saveAsFile)
+        parent.filemenu.add_command(label="Save All files" , command=a.saveAllFiles)
         parent.filemenu.add_command(label="Exit" , command=a.exit)
         parent.main_menu.add_cascade(label="File" , menu=parent.filemenu)

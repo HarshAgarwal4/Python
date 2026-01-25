@@ -1,0 +1,8 @@
+.env
+_pycache_
+a.py
+code.c
+dist
+build
+Code Editor.spec
+main.spec

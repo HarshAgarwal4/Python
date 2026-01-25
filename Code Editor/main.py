@@ -4,7 +4,7 @@ from core.build import AppLayout
 class code_editor(Tk):
     def __init__(self):
         super().__init__()
-        self.title("VS Code - by Harsh Agarwal")
+        self.title("Code Editor - by Harsh Agarwal")
         self.geometry("544x444")
         AppLayout(self)
 
