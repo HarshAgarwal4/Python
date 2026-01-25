@@ -20,3 +20,4 @@ class Employee:
 harsh = Employee("Harsh")
 harsh.getInfo()
 harsh.greet()
+

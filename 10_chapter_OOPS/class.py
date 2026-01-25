@@ -7,3 +7,4 @@ harsh.name = "Harsh Agarwal"  #this is instance attribute
 rohan = Employee()
 rohan.name = "Rohan bhadwa"
 print(harsh.name+'\n'+rohan.name)
+

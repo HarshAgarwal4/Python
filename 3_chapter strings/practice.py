@@ -19,3 +19,5 @@ letter = 'asbvsgwef  swegrefg   grgrea'
 print(letter.find("  "))
 #4 
 print(letter.replace("  " , " "))
+
+

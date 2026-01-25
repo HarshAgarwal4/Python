@@ -13,3 +13,6 @@ print(a)
 list = [1,2,3,4]
 for i,item in enumerate(list):
     print(i,item)
+
+
+

@@ -37,3 +37,4 @@ print(table)
 
 with open("Tables.txt" , "a") as f:
     f.write("Table of "+ str(n) +" : "+str(table)+"\n")
+

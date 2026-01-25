@@ -17,3 +17,6 @@ print(len(name2)) #length of string
 
 a=input("Enter = ")
 print(a)
+
+
+
